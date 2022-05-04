@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import CollectionPage from "../collection/Collection";
 
 const ShopPage = ({ match }) => (
-  <div className="shop-page">
+  <div>
     <Route exact path={`${match.path}`} component={CollectionsOverview} />
     <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
   </div>
